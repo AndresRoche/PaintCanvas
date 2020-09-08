@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>PaintAndres</title>
+</head>
+<body>
+
+	<form onsubmit="return false">
+		<label for="color">
+			<select name="color" id="color">
+				<option value="red">rojo</option>
+				<option value="blue" selected>azul</option>
+				<option value="green">verde</option>
+				<option value="yellow">amarrillo</option>
+			</select>
+		</label>	
+		
+		<label for="size">
+			<input type="number" name="size" id="size" max="100" min="1" value="1">
+		</label>
+		<input type="button" value="pincel" id="pincel">
+		<input type="button" value="borrador" id="borrador">
+		<button id="rallita">/</button>
+	</form>
+	<canvas width="500" height="500" id="canvas_cuadrito"></canvas>
+
+	<script type="text/javascript" src="js/funciones.js"></script>
+</body>
+</html>
